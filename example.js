@@ -1,11 +1,3 @@
-# decision_tree_js
-Implementation in JavaScript of Josh Gorden's (@random-forests) decision tree classifier tutorial.
-
-This is a complete JavaScript re-write of [this](https://github.com/random-forests/tutorials/blob/master/decision_tree.py) basic CART decision tree algorithm originally written in Python
-by @random-forests for a Google Developers YouTube [series](https://youtu.be/LDRbO9a6XPU).
-
-## Example usage
-```javascript
 const DecisionTree = require('./decision-tree');
 
 const trainingData = [
@@ -27,7 +19,3 @@ model.printTree()
 // make a new prediction
 console.log('\nPrediction for {colour: \'Red\', diameter: 2}:')
 console.log(model.classify({colour: 'Red', diameter: 2}))
-```
-
-The above example can be run from the project root with:
-`node example.js`
